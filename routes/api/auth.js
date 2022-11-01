@@ -12,7 +12,7 @@ const router = express.Router();
 
 // signup
 router.post(
-  "/register",
+  "/signup",
   validateBody(schemas.registerSchema),
   ctrlWrapper(ctrl.register)
 );
